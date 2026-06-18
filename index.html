@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+  <base href="/warehouse-inventory/">
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="نظام إدارة المستودعات - Warehouse Inventory System">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="إدارة المستودعات">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <link rel="icon" type="image/png" href="favicon.png"/>
+  <title>نظام إدارة المستودعات</title>
+  <link rel="manifest" href="manifest.json">
+
+  <style>
+    body { margin: 0; background: #0B1220; }
+    #loading { display: flex; flex-direction: column; align-items: center; justify-content: center;
+      height: 100vh; color: #B0BEC5; font-family: sans-serif; font-size: 18px; }
+    #loading small { margin-top: 12px; font-size: 13px; opacity: 0.6; }
+  </style>
+  <script>
+    window.addEventListener('load', function() {
+      var el = document.getElementById('loading');
+      if (el) {
+        setTimeout(function() {
+          el.innerHTML = '<div>جاري تحميل نظام إدارة المستودعات...</div><small>التحميل الأول قد يستغرق دقيقة على الجوال</small>';
+        }, 10000);
+        setTimeout(function() {
+          el.innerHTML = '<div>يرجى الانتظار...</div><small>إذا استمر التحميل، تأكد من اتصال الانترنت وحاول مجدداً</small>';
+        }, 30000);
+      }
+    });
+  </script>
+</head>
+<body>
+  <div id="loading">جاري تحميل نظام إدارة المستودعات...</div>
+  <script src="flutter_bootstrap.js" async></script>
+</body>
+</html>
