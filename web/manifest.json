@@ -1,0 +1,37 @@
+{
+    "name": "نظام إدارة المستودعات",
+    "short_name": "المستودعات",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#0B1220",
+    "theme_color": "#0E7490",
+    "description": "نظام إدارة المستودعات - Warehouse Inventory System",
+    "orientation": "portrait-primary",
+    "prefer_related_applications": false,
+    "dir": "rtl",
+    "lang": "ar",
+    "icons": [
+        {
+            "src": "icons/Icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/Icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/Icon-maskable-192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "icons/Icon-maskable-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ]
+}
